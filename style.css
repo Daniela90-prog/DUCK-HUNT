@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg{
+    position: relative;
+    background-image: url(IMAGENES/bg-duck-hunter\ \(1\).png);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100vh;
+    cursor: crosshair; /* cursor vuelve el cursor en forma de cruz */
+
+}
