@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#bg {
+    position: relative;
+    background: url(IMAGENES/bg-duck-hunter\ \(1\).png);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100vh;
+    cursor: crosshair; /* cursor vuelve el cursor en forma de cruz */
+
+}
+
+#logo {
+    float: none;
+    animation: movimiento 2.5s linear infinite;
+}
+#logo img {
+    margin: 50px;
+    width: 350px;
+}
+@keyframes movimiento {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY();
+    }
+}
+
+#dog li{
+    float: none;
+    animation: movimiento2 2.5s linear infinite;
+}
+#dog li img {
+    display: block;
+    width: 230px;
+    height: 230px;
+    margin: 170px;
+}
+@keyframes movimiento2 {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX();
+    }
+}
