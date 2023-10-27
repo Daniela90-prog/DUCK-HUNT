@@ -14,3 +14,79 @@
     cursor: crosshair; /* cursor vuelve el cursor en forma de cruz */
 
 }
+
+table {
+    border-collapse: collapse;
+    width: 300px;
+    color: white;
+    
+    
+    
+    
+}
+
+table, th, td {
+    border: 1px solid rgb(1, 1, 1);
+    
+    
+    
+}
+
+i{
+    color: white;
+    
+}
+
+.color {
+    background-color: #3cbcfc;
+}
+
+::placeholder{
+    color: white;
+    
+}
+
+.text {
+    color: white;
+    font-size: arial;
+    background-color: #184b65;
+    padding: 26px;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+.titulo{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+#icon{
+    bottom: .5rem;
+    right: 1rem;
+    margin-left: -2rem;
+    user-select: none;
+    cursor: pointer;
+    
+  }
+
+  .tabla{
+    text-align: center;
+    margin-top: 30px;
+    
+    
+    
+  }
+
+  .centrar{
+    margin: 0 auto;
+    background-color: #184b65;
+    
+
+  }
+
+  .text-table {
+    color: white;
+
+}
