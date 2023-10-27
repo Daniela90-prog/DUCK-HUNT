@@ -1,19 +1,18 @@
-document.addEventListener("DOMContentLoaded", function() {
-    let sonido = document.getElementById("gameSound");
-    let reproduccionesRestantes = 10; // Establece la cantidad de veces que deseas reproducir el sonido
+const audioElement = document.getElementById('audioElement');
+const toggleSoundButton = document.getElementById('toggleSound');
+
+let isSoundOn = true;
+
+toggleSoundButton.addEventListener('click', () => {
+  if (isSoundOn) {
+    audioElement.pause();
+    toggleSoundButton.textContent = 'Encender Sonido';
+  } else {
+    audioElement.play();
+    toggleSoundButton.textContent = 'Apagar Sonido';
+  }
   
-    function reproducirSonido() {
-      sonido.currentTime = 0; // Reinicia la reproducción desde el principio
-      sonido.play();
-      reproduccionesRestantes--;
-  
-      if (reproduccionesRestantes > 0) {
-        setTimeout(reproducirSonido, sonido.duration * 1000); // Espera la duración del sonido antes de la siguiente reproducción
-      }
-    }
-  
-    // Llama a la función para iniciar la primera reproducción
-    reproducirSonido();
-  });
+  isSoundOn = !isSoundOn;
+});
   
 

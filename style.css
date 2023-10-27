@@ -14,3 +14,15 @@
     cursor: crosshair; /* cursor vuelve el cursor en forma de cruz */
 
 }
+#toggleSound {
+    position: absolute;
+    right: 0;
+    margin: 10px;
+    background-color: black;
+    border: none;
+    opacity: 0.6;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 10px;
+}
